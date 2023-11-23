@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% block title %} landing {% endblock %}</title>
+    <meta name="description" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='landing-page.css')}}"
+  />
+  </head>
+  <body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #9f3d37">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="#">Navbar scroll</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 200px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Tools
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ToDO List</a></li>
+                <li><a class="dropdown-item" href="#">Sticky Notes</a></li>
+                <li><a class="dropdown-item" href="#">Image Search</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="/logout">Log Out</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/logout" aria-disabled="true"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Nav-->
+
+    <!-- Hero -->
+    <section
+      class="hero p-5 pt-lg-0 pt-lg-5 text-center text-sm-start text-white" 
+      id="home"
+    >
+   
+      <div class="container">
+        <div
+          class="d-sm-flex align-items-center justify-content-center text-center text-white"
+        >
+          <div>
+            <h1 class="pt-5 hero-heading">
+              Boost Your Productivity With Our Ultimate Productivity Companion
+            </h1>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+
+            <button
+              href=""
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#signUp"
+              class="button"
+            >
+              See More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--hero-->
+
+
+     <!-- Testimonials -->
+
+     <section id="testimonials" class="p-5">
+        <div class="container">
+            <div class="container">
+
+                <div class="row text-center  ">
+
+                    <div class="col-sm-4 ">
+                        <h3 class="font-weight-bold">1000+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h3 class="font-weight-bold ">50+</h3>
+                        <p>New Tools Arriving</p>
+                    </div>
+
+
+
+                    <div class="col-sm-4">
+                        <h3 class="font-weight-bold">3+</h3>
+                        <p>Years of Operation</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+
+    <!-- Testimonials -->
+
+
+
+
+    <!-- Quote -->
+
+    <section class="quote p-4 pt-lg-0 pt-lg-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+
+
+
+
+
+                <div>
+                    <h2 class="quote pt-5">The best way to predict<br> the future is to create it...</h2>
+
+                    <p class="name">Peter Drucker</p>
+
+
+
+
+                </div>
+
+
+                <img class="img-fluid w-50 d-none d-sm-block pb-5" src="{{ url_for('static', filename='img/gym.jpg') }}" alt="Gym">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Quote -->
+
+
+
+
+
+    <!--Some tools -->
+    <section class=" what-we-do " id="services">
+
+
+        <div class="container">
+            <div class="row text-left">
+
+                <h1 class="what-we-do-h1">Some tools</h1>
+
+                <div class="col-md">
+                    <h4 class="col-h4">Sticky Notes</h4>
+                    <p class="col-text">Streamline your thoughts effortlessly with our intuitive Sticky Note app. Organize ideas, set reminders – simplicity at your fingertips.. </p>
+
+                    <a href="" class="card-cta">Visit Now</a>
+
+
+                </div>
+
+
+
+
+                <div class="col-md">
+                    <h4 class="col-h4">ToDo List</h4>
+                    <p class="col-text">Empower your productivity with our Todo List app. Prioritize tasks, stay organized, and accomplish more. </p>
+                    <a href="" class="card-cta">Visit Now</a>
+
+
+                </div>
+
+
+
+                <div class="col-md">
+                    <h4 class="col-h4">Image Searcher</h4>
+                    <p class="col-text">Find inspiration with our Image Search feature. Find and explore a vast array of images at your fingertips </p>
+                    <a href="" class="card-cta last">Visit Now</a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <!--Some tools -->
+
+<!-- IMAGES-->
+<div class="row no-gutters">
+    <div class="col-md-6 g-0">
+        <div class="leftside"></div>
+    </div>
+
+    <div class="col-md-6 g-0">
+        <div class="rightside"></div>
+    </div>
+</div>
+</div>
+    
+<!-- IMAGES-->
+
+
+  <!--Footer -->
+
+  <footer class="p-3 footer text-white text-center position-relative">
+
+
+    <div class="container">
+
+
+        <div class=" footer d-flex align-items-center justify-content-between text-center">
+            <ul class="footer-ul">
+                <a href="#"><i class="footer-icons bi bi-twitter text-light mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+            </ul>
+
+            <a href="https://icons8.com/" target="new" class="attribution lead">https://icons8.com/</a>
+
+            <a href="" class=" arrow-up "><i class="bi bi-arrow-up-circle h1"></i></a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</footer>
+
+<!-- FOOTER -->
+
+    
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

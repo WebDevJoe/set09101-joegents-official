@@ -1,0 +1,175 @@
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar-toggler-icon {
+  /* come back to it */
+  background-image: stroke= "rgba(0,255,0,1)";
+}
+
+.button:hover {
+  outline: none;
+  border: #9f3d37;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50px;
+  padding: 15px 60px;
+  -webkit-appearance: none;
+}
+
+.button {
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #9f3d37;
+  border-radius: 50px;
+  padding: 15px 60px;
+  -webkit-appearance: none;
+}
+
+.hero {
+  background-image: url("./img/hero.jpg");
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.hero-heading {
+  color: white;
+  padding-bottom: 20px;
+}
+
+#testimonials {
+  background-color: #9f3d37;
+  color: white;
+}
+
+.quote img {
+  width: 400px;
+  padding-top: 30px;
+  height: 300px;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+.name {
+  color: #9f3d37;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .d-md-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-fluid {
+    width: 90% !important;
+  }
+}
+
+/* ourtools ***/
+
+.what-we-do {
+  padding: 7em;
+}
+
+.what-we-do-h1 {
+  text-align: left;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-weight: bold;
+}
+
+.col-h4 {
+  color: #9f3d37;
+  font-weight: bold;
+}
+
+.card-cta {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.card-cta:hover {
+  color: #9f3d37;
+}
+
+@media (max-width: 768px) {
+  .what-we-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+  }
+
+  .col-md {
+    padding-bottom: 2.5em;
+  }
+}
+
+.leftside,
+.rightside {
+  height: 30vh;
+  width: 100%;
+}
+
+.leftside {
+  background-image: url(./img/leftside.jpg);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+.rightside {
+  background-image: url(./img/rightside.jpg);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .leftside,
+  .rightside {
+    height: 50vh;
+  }
+}
+
+/*** FOOTER ***/
+.footer {
+  background-color: #9f3d37;
+  width: 100%;
+}
+.arrow-up {
+  color: white;
+}
+
+.arrow-up:hover {
+  color: white;
+}
+
+.attribution {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.attribution:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-ul {
+    display: none;
+  }
+}
