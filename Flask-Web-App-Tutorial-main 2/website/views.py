@@ -7,6 +7,7 @@ import json
 # Code from https://www.youtube.com/watch?v=dam0GPOAvVI&t=4299s
 views = Blueprint('views', __name__)
 
+
 # Define notes globally
 notes = []
 
@@ -61,6 +62,3 @@ def save_notes():
         json.dump(notes, file, indent=4)
 
 
-@views.errorhandler(404)
-def page_not_found(error):
-    return render_template('404.html')
